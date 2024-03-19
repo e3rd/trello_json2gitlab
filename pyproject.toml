@@ -1,0 +1,20 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "trello_json2gitlab"
+version = "0.5.0"
+description = "Migrate Trello to Gitlab"
+authors = ["Edvard Rejthar <edvard.rejthar@nic.cz>"]
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/e3rd/trello_json2gitlab"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+dotenv = "*"
+python-gitlab = "*"
+tqdm = "*"
+
+[tool.poetry.scripts]
+trello_json2gitlab= "trello_json2gitlab:main"
